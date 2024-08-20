@@ -46,7 +46,6 @@ namespace P2FixAnAppDotNetCode.Models.Services
             {
                 if (line.Product != null)
                 {
-                    // Soustraire directement la quantité dans le stock
                     _productRepository.UpdateProductStocks(line.Product.Id, line.Quantity);
                 }
             }
