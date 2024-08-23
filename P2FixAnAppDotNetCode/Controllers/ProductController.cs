@@ -14,6 +14,9 @@ namespace P2FixAnAppDotNetCode.Controllers
         {
             _productService = productService;
             _languageService = languageService;
+
+            // Ajout pour définir l'anglais par défaut
+            _languageService.SetCulture(string.Empty);
         }
 
         public IActionResult Index()
