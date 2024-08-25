@@ -35,8 +35,8 @@ namespace P2FixAnAppDotNetCode.Models.Services
                     culture = "fr";
                     break;
                 case "spanish":
-                  culture = "es";
-                  break;
+                  //culture = "es";
+                  //break;
                 default:
                     culture = "en";
                     break;
