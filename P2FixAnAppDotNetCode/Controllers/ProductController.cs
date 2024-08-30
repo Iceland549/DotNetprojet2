@@ -19,11 +19,11 @@ namespace P2FixAnAppDotNetCode.Controllers
 
         public IActionResult Index()
         {
-            var culture = _languageService.SetCulture(string.Empty);
+            //var culture = _languageService.SetCulture(string.Empty);
 
-            HttpContext.Items.Clear();
+            //HttpContext.Items.Clear();
 
-            _languageService.UpdateCultureCookie(HttpContext, culture);
+            //_languageService.UpdateCultureCookie(HttpContext, culture);
 
             List<Product> products = _productService.GetAllProducts();
             return View(products);
