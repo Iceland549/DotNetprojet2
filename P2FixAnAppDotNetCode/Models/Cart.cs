@@ -30,7 +30,7 @@ namespace P2FixAnAppDotNetCode.Models
              // TODO implement the method
         public void AddItem(Product product, int quantity)
         {
-            var line = GetCartLineList().FirstOrDefault(l => l.Product.Id == product.Id);
+            var line = GetCartLineList().FirstOrDefault(p => p.Product.Id == product.Id);
             if (line == null)
             {
                 GetCartLineList().Add(new CartLine { Product = product, Quantity = quantity });
